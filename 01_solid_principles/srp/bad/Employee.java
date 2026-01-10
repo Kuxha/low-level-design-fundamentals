@@ -1,6 +1,7 @@
 package srp.bad;
 
 public class Employee {
+
     private String id;
     private String name;
 
@@ -9,13 +10,13 @@ public class Employee {
         this.name = name;
     }
 
-    // VIOLATION: Business Logic (Math) mixed with Data
+    // why do we have business data in this cla
     public double calculateSalary() {
-        return 10000 * 0.8; // Logic hardcoded here
+        return 10000;
     }
 
-    // VIOLATION: Persistence Logic (DB) mixed with Data
     public void save() {
-        System.out.println("Saving " + this.name + " to database...");
+        System.out.println("saving to database");
     }
+
 }
