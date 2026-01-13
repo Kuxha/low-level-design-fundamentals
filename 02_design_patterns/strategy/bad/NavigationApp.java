@@ -1,4 +1,3 @@
-
 public class NavigationApp {
     public void buildRoute(String transportType) {
         if (transportType.equals("car")) {
