@@ -7,7 +7,9 @@ public class DatabaseConnection {
         System.out.println("new db connection");
     }
 
-    public static DatabaseConnection getInstance() {
+    // adding 'synchronized' to the method signature.
+    // forces a thread B to wait for thread A to finish
+    public static synchronized DatabaseConnection getInstance() {
         if (dbInstance == null) {
             dbInstance = new DatabaseConnection();
         }
