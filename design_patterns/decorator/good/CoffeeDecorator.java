@@ -1,4 +1,3 @@
-package decorator.good;
 
 public abstract class CoffeeDecorator implements Coffee {
     // 1. Change to protected so children (Milk/Sugar) can use it.

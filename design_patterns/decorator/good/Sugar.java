@@ -1,4 +1,3 @@
-package decorator.good;
 
 public class Sugar extends CoffeeDecorator {
 

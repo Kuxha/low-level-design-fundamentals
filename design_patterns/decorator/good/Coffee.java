@@ -1,4 +1,3 @@
-package decorator.good;
 
 public interface Coffee {
     public double getCost();
